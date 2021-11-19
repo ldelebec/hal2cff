@@ -17,7 +17,6 @@ display(output)
 def generate_cff(_):
     with output:
         output.clear_output()
-        # spinner.layout = widgets.Layout(visibility="visible")
         result = hal2cff(url.value)
         result_pre = f"<pre>{result}</pre>"
         display_html(result_pre, raw=True)
